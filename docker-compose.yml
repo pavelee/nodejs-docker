@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  linux:
+    container_name: nodejs-docker
+    build:
+      context: "./"
+      dockerfile: "./docker/Dockerfile"
+    volumes:
+      - ./playground:/playground
